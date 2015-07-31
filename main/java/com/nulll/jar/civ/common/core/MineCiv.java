@@ -42,13 +42,7 @@ public class MineCiv
 	public void preInit(FMLPreInitializationEvent event) throws Exception
 	{
 
-		Field bListF = BiomeGenBase.class.getDeclaredField("biomeList");
-
-		bListF.setAccessible(true);
-
 		setupMetadata();
-
-		FMLCommonHandler.instance().exitJava(0, false);
 
 		PROXY.preInit(event);
 	}

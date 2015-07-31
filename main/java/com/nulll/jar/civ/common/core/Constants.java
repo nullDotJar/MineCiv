@@ -8,7 +8,7 @@ public class Constants
 
 	public static final String MOD_ID = "mineciv";
 
-	public static final String MOD_NAME = "MineCovilizations";
+	public static final String MOD_NAME = "MineCivilizations";
 
 	public static final String MOD_VERSION = "0.0.1-DEV";
 
@@ -29,6 +29,6 @@ public class Constants
 	}
 
 	public static final String SERVER_PROXY = "com.nulll.jar.civ.common.proxy.ServerProxy";
-	public static final String CLIENT_PROXY = "com.nulll.jar.civ.common.sproxy.ClientProxy";
+	public static final String CLIENT_PROXY = "com.nulll.jar.civ.common.proxy.ClientProxy";
 
 }
