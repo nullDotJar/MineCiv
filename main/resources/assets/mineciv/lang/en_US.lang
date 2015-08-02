@@ -1,0 +1,6 @@
+//Creative Tab Names
+itemGroup.TabBlocks=MineCiv Blocks
+itemGroup.TabItems=MineCiv Items
+
+//Block Names
+tile.copperOreNode.name=Copper Ore Node

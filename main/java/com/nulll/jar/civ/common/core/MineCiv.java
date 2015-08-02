@@ -22,7 +22,10 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartedEvent;
 
+import com.nulll.jar.civ.common.modBlocks.ModBlocks;
 import com.nulll.jar.civ.common.proxy.ICivProxy;
+import com.nulll.jar.civ.common.util.ModTabBlocks;
+import com.nulll.jar.civ.common.util.ModTabItems;
 import com.nulll.jar.civ.common.util.ModUtils;
 import com.nulll.jar.civ.common.util.java.Reflect;
 import com.nulll.jar.civ.common.util.java.ZipUtil;
@@ -34,6 +37,9 @@ public class MineCiv
 
 	@SidedProxy(clientSide = Constants.CLIENT_PROXY, serverSide = Constants.SERVER_PROXY)
 	public static ICivProxy PROXY;
+	
+	public static final ModTabBlocks ModTabBlocks = new ModTabBlocks("TabBlocks");
+	public static final ModTabItems ModTabItems = new ModTabItems("TabItems");
 
 	@Mod.Metadata
 	public static ModMetadata METADATA;
@@ -41,6 +47,7 @@ public class MineCiv
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) throws Exception
 	{
+		 ModBlocks.createBlocks();
 
 		setupMetadata();
 
