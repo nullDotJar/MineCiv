@@ -23,6 +23,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartedEvent;
 
 import com.nulll.jar.civ.common.modBlocks.ModBlocks;
+import com.nulll.jar.civ.common.modItems.ModItems;
 import com.nulll.jar.civ.common.proxy.ICivProxy;
 import com.nulll.jar.civ.common.util.ModTabBlocks;
 import com.nulll.jar.civ.common.util.ModTabItems;
@@ -48,6 +49,7 @@ public class MineCiv
 	public void preInit(FMLPreInitializationEvent event) throws Exception
 	{
 		 ModBlocks.createBlocks();
+		 ModItems.createItems();
 
 		setupMetadata();
 
