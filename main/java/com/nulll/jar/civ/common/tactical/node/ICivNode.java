@@ -1,8 +1,11 @@
 package com.nulll.jar.civ.common.tactical.node;
 
-import com.nulll.jar.civ.common.tactical.CivWorld;
+import net.minecraft.nbt.NBTTagCompound;
 
-public interface ICivNode
+import com.nulll.jar.civ.common.tactical.CivWorld;
+import com.nulll.jar.civ.common.util.INBTSaveHandler;
+
+public interface ICivNode extends INBTSaveHandler
 {
 
 	public int getX();
@@ -76,6 +79,18 @@ public interface ICivNode
 		public int getID()
 		{
 			return m_id;
+		}
+
+		@Override
+		public void save(NBTTagCompound nbt)
+		{
+			//NOOP
+		}	
+
+		@Override
+		public void load(NBTTagCompound nbt)
+		{
+			//NOOP
 		}
 
 	}
