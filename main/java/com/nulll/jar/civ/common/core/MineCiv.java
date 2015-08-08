@@ -46,7 +46,7 @@ public class MineCiv
 	public static ModMetadata METADATA;
 
 	@EventHandler
-	public void preInit(FMLPreInitializationEvent event) throws Exception
+	public void preInit(FMLPreInitializationEvent event)
 	{
 		 ModBlocks.createBlocks();
 		 ModItems.createItems();
